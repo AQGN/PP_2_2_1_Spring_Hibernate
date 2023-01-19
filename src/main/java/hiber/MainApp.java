@@ -20,9 +20,7 @@ public class MainApp {
         userService.add(new User("User4", "Lastname4", "user4@mail.ru", new Car("FourthCar", 400)));
 
         List<User> users = userService.listUsers();
-        for (User user : users) {
-            System.out.println(user.toString());
-        }
+        System.out.println(users);
 
         System.out.println(userService.getUserByCar("ThirdCar", 300));
 
